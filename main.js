@@ -65,6 +65,14 @@ function handleResult() {
   const resultText = resultBox(checkedCount);
   resultContainer.innerHTML = resultText;
   openModal();
+  audio();
+}
+
+function audio() {
+  const audio = new Audio("assets/audio/catch_you.mp3");
+  if (checkedCount >= 8) {
+    audio.play();
+  }
 }
 
 checkBoxes.forEach((checkBox) => {
