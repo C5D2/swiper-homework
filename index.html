@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="title">범쌤과 함께 떠나는</h1>
+        <p class="title">~어르신 테스트~</p>
+        <p>아래 이미지에 대해 알고 있다면 체크!</p>
+      </div>
+    </header>
+    <main>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바완</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn" />
+                <label for="check_btn"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <img class="slide-img" src="./assets/lycos.png" alt="dog" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바투</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn2" />
+                <label for="check_btn2"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>힌트 : 사이버가수</p>
+              <img
+                class="slide-img"
+                src="./assets/adam.jpeg"
+                alt="cyber-singer"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바뜨리</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn3" />
+                <label for="check_btn3"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>용의 해라 넣어봤습니다! 이 만화의 제목은?</p>
+              <img
+                class="slide-img"
+                src="./assets/dragon_ball.png"
+                alt="dragon-ball"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바포</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn4" />
+                <label for="check_btn4"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>힌트 : 아직 살아계십니다.</p>
+              <img
+                class="slide-img"
+                src="./assets/dicaprio.gif"
+                alt="dicaprio"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바파이브</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn5" />
+                <label for="check_btn5"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>이 짤의 영화 제목은?</p>
+              <img
+                class="slide-img"
+                src="./assets/dongwon.gif"
+                alt="temptation-of-wolves"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바식스</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn6" />
+                <label for="check_btn6"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>이 게임의 이름은?</p>
+              <img class="slide-img" src="./assets/q_play.png" alt="q-play" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바세븐</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn7" />
+                <label for="check_btn7"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>혈액형 심리 검사에 대해 아시나요?</p>
+              <img
+                class="slide-img"
+                src="./assets/blood_type.png"
+                alt="blood-type"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-title">
+              <span>남바에잇</span>
+              <div class="check-box_wrap">
+                <input class="check-box" type="checkbox" id="check_btn8" />
+                <label for="check_btn8"><span>Check</span></label>
+              </div>
+            </div>
+            <div class="slide-main">
+              <p>다음 만화의 제목은?</p>
+              <img
+                class="slide-img"
+                src="./assets/doochiandppukku.jpeg"
+                alt="doochi_and_ppukku"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="result">
+        <button class="result-btn" type="button">결과 보기</button>
+        <div class="modal">
+          <div class="modal-inside">
+            <div class="modal-contents">
+              <button class="close-btn" type="button"></button>
+              <div class="result-container"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

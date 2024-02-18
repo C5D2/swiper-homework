@@ -1,0 +1,267 @@
+/* Reset */
+body,
+h1,
+h2,
+p {
+  margin: unset;
+  padding: unset;
+}
+
+h1 {
+  font-size: unset;
+  font-weight: unset;
+}
+
+button {
+  all: unset;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+/* Typography */
+:root {
+  font-family: "Orbit", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Swiper */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 420px;
+  height: 560px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+/* Contents */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.slide-title {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: auto;
+  padding: 10px;
+}
+
+.slide-title span {
+  vertical-align: middle;
+}
+
+.slide-img {
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+.slide-main p {
+  padding: 10px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.result img {
+  max-width: 500px;
+}
+
+.result-btn {
+  background-color: rgb(255, 239, 177);
+  padding: 10px;
+  margin: 20px;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body:has(.modal.is_active) {
+  overflow: hidden;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  inset: 0;
+  padding: 60px 60px 60px 80px;
+
+  overflow-y: scroll;
+  opacity: 0;
+
+  pointer-events: none;
+
+  display: flex;
+}
+
+.modal.is_active {
+  opacity: 1;
+  pointer-events: unset;
+  z-index: 999;
+}
+
+.modal-inside {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  /* opacity: 0; */
+
+  flex-grow: 1;
+  height: 100%;
+  min-height: 0;
+}
+
+.modal-contents {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+
+.close-btn {
+  display: block;
+  margin-left: auto;
+  width: 14px;
+  height: 14px;
+  padding: 15px;
+}
+
+.result-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn::before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url(assets/close.svg);
+}
+
+input.check-box {
+  display: none;
+}
+
+input#check_btn + label {
+  cursor: pointer;
+}
+
+.check-box_wrap span {
+  padding-left: 5px;
+}
+
+/* label:before에 체크하기 전 상태 CSS */
+input.check-box + label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ff145b;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+/* label:before에 체크 된 상태 CSS */
+input.check-box:checked + label:before {
+  content: "";
+  background-color: #ff145b;
+  border-color: #ff145b;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
