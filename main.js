@@ -36,7 +36,7 @@ function resultBox(checkedCount) {
     imagePath = "kakashi.webp";
   } else if (checkedCount >= 8) {
     scoreContent =
-      "🎉🥳축하합니다! 범신급에 도달하셨습니다! 최고의 경지에 도달하신 그대에게 범신의 축복을!🎉";
+      "🎉🥳축하합니다! 범신급 어르신에 도달하셨습니다! 최고의 경지에 도달하신 그대에게 범신의 축복을!🎉";
     imagePath = "simseonbeom.png";
   }
 
