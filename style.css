@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@font-face {
+  font-family: "Shilla_CultureB-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* Reset */
 body,
@@ -20,11 +26,18 @@ button {
 
 /* Typography */
 :root {
-  font-family: "Orbit", sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
+  font-family: "Shilla_CultureB-Bold";
   font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Shilla_CultureB-Bold";
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -53,7 +66,7 @@ body {
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -129,8 +142,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  font-weight: 700;
   margin: 0 0 10px 0;
 }
 
@@ -169,6 +180,8 @@ body {
   background-color: rgb(255, 239, 177);
   padding: 10px;
   margin: 20px;
+  font-size: 20px;
+  font-family: "Shilla_CultureB-Bold";
 }
 
 body {
